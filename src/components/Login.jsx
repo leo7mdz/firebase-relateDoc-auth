@@ -11,6 +11,7 @@ import {
 
 const auth = getAuth(firebaseApp);
 const googleProvider = new GoogleAuthProvider();
+
 const Login = () => {
   const [isRegistering, setIsRegistering] = useState(null);
 
