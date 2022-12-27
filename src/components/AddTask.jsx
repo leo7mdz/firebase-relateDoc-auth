@@ -13,7 +13,6 @@ const AddTask = ({ tasks, userEmail, setTasksList }) => {
   const handleChange = async (e) => {
     //detectar archivo
     const localFile = e.target.files[0];
-    console.log(localFile);
 
     //Cargarlo a firebase storage
     const fileRef = ref(storage, `documents/${localFile.name}`);

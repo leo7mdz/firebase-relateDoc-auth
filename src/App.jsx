@@ -18,7 +18,12 @@ function App() {
       setIsLogin(null);
     }
   });
-  return <div className="App">{isLogin ? <Home /> : <Login />}</div>;
+  console.log(isLogin);
+  return (
+    <div className="App">
+      {isLogin ? <Home userEmail={isLogin.email} /> : <Login />}
+    </div>
+  );
 }
 
 export default App;
